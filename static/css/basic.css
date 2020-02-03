@@ -34,10 +34,9 @@ a:hover {
 #leftside-name {
     text-transform: uppercase;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    letter-spacing: 1.42px;
-
     font-size: 32px;
     color: red;
+    font-weight: 700;
 
 }
 
@@ -366,8 +365,8 @@ select {
 /* Section block */
 section {
     grid-area: about;
-    background-color: orangered;
-    color:black;
+    background-color: black;
+    color:white;
     padding-inline: 40px;
     padding-block: 40px;
 
@@ -409,8 +408,8 @@ footer {
     grid-area: footer;
     
 
-    background-color: #1e1e24;
-    padding-top: 20px;
+    background-color: darkred;
+    padding-top: 5px;
     color: white;
     padding-inline: 100px;
 

@@ -300,8 +300,8 @@ def filterbox_meta_count():
     filter_box_meta['betting'] = Bonus.objects.filter(Q(suplier__suplier_type=1)).count()
 
     # TODO Replace maxes below into Bonus methods and cover by @property. Check out how the decision will work with Serializer default
-    filter_box_meta['wager_range_max'] = Bonus.objects.aggregate(Max('wager'))['wager__max']
-    filter_box_meta['bonus_range_max'] = Bonus.objects.aggregate(Max('bonus_digit'))['bonus_digit__max']
-    filter_box_meta['dep_range_max'] = Bonus.objects.aggregate(Max('dep'))['dep__max']
+    filter_box_meta['wager_range_max'] = Bonus.objects.aggregate(Max('wager'))['wager__max'] or 0
+    filter_box_meta['bonus_range_max'] = Bonus.objects.aggregate(Max('bonus_digit'))['bonus_digit__max'] or 0
+    filter_box_meta['dep_range_max'] = Bonus.objects.aggregate(Max('dep'))['dep__max'] or 0
 
     return filter_box_meta

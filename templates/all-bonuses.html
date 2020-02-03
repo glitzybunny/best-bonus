@@ -14,7 +14,7 @@
                 fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
                 deserunt mollit anim id est laborum.</p>
 
-            <button type="button" class="btn btn-deep-orange">ЦЕПАНУТЬ БОНУС</button>
+            <button type="button" class="btn btn-danger">ЦЕПАНУТЬ БОНУС</button>
         </div>
 
         <!-- <img src="{% static 'bonus2.png' %}" alt=""> -->
@@ -183,7 +183,7 @@
 
         <div id="replaceable-cardblock">
             {% include 'cardblock.html' with bonuses=bonuses bonuses_meta=bonuses_meta %}
-            {% include 'cardblock.html' with bonuses=sweet_bonuses bonuses_meta=sweet_bonuses_meta %}
+            {% comment %} {% include 'cardblock.html' with bonuses=sweet_bonuses bonuses_meta=sweet_bonuses_meta %} {% endcomment %}
 
         </div>
 

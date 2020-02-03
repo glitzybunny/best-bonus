@@ -13,7 +13,7 @@ from core import models
 
 
 # Returns the main page. Paginates bonuses via AJAX
-def bonusRating(request):
+def all_bonuses(request):
     bonuses = models.Bonus.objects.all()
 
     #? Paginator paginates 6 bonuses

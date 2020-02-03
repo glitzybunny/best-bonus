@@ -3,7 +3,7 @@ from core import views
 
 
 urlpatterns = [
-    path('', views.bonusRating, name='rating'),
+    path('', views.all_bonuses, name='rating'),
 
     # Ajax endpoints
     path('ajax-search/', views.search_ajax),
